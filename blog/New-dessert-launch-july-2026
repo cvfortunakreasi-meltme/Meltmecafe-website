@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>7 New Desserts at Melt Me Batam (July 2026 Launch) — Melt Me</title>
+  <meta name="description" content="Melt Me just launched 7 new desserts in Batam — Brownie Madness, Dubai Berry Crush, Ube Cheezmelt, Ube Cheesecup, Pistachio Cheesecup, Matcha Ube, and Ube Chewy Cheezmelt. Here's what to try first." />
+  <meta name="keywords" content="new dessert batam 2026, melt me new menu, ube cheesecake batam, dubai chocolate batam, brownie batam, cheesecup batam, batam cafe new menu, halal dessert batam" />
+  <link rel="canonical" href="https://meltmecafe.com/blog/new-dessert-launch-july-2026" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="7 New Desserts at Melt Me Batam (July 2026 Launch)" />
+  <meta property="og:description" content="Brownie Madness, Dubai Berry Crush, Ube Cheezmelt, and more — 7 new creations just landed at Melt Me, Batam." />
+  <meta property="og:image" content="https://meltmecafe.com/hero.jpg" />
+  <meta property="og:url" content="https://meltmecafe.com/blog/new-dessert-launch-july-2026" />
+  <meta property="og:type" content="article" />
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "7 New Desserts at Melt Me Batam (July 2026 Launch)",
+    "description": "Melt Me Dessert & Coffee Space launches 7 new desserts in July 2026: Brownie Madness, Dubai Berry Crush, Ube Cheezmelt, Ube Cheesecup, Pistachio Cheesecup, Matcha Ube, and Ube Chewy Cheezmelt.",
+    "image": "https://meltmecafe.com/hero.jpg",
+    "author": { "@type": "Organization", "name": "Melt Me Dessert & Coffee Space" },
+    "publisher": { "@type": "Organization", "name": "Melt Me Dessert & Coffee Space", "logo": { "@type": "ImageObject", "url": "https://meltmecafe.com/logo.jpg" } },
+    "datePublished": "2026-07-06",
+    "dateModified": "2026-07-06",
+    "mainEntityOfPage": "https://meltmecafe.com/blog/new-dessert-launch-july-2026"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:    #F7F2EA;
+      --parchment:#EDE6D8;
+      --gold:     #B89A6A;
+      --charcoal: #2C2C2C;
+      --muted:    #7A7060;
+      --white:    #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--parchment);
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--charcoal);
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+    .nav-back {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--white);
+      border-bottom: 1px solid var(--parchment);
+      padding: 72px 32px 56px;
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--charcoal);
+      margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero-sub {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+    .hero-meta {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+    .hero-meta span::before {
+      content: '—';
+      margin-right: 6px;
+      color: var(--gold);
+    }
+
+    /* ── LANG TOGGLE ── */
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin: 40px auto 0;
+      width: fit-content;
+      border: 1px solid var(--parchment);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .lang-btn {
+      padding: 9px 28px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      background: var(--white);
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 24px 100px;
+    }
+
+    .lang-section { display: none; }
+    .lang-section.visible { display: block; }
+
+    .article-wrap h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin: 52px 0 16px;
+      line-height: 1.3;
+    }
+    .article-wrap h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin: 36px 0 12px;
+      letter-spacing: 0.02em;
+    }
+    .article-wrap p {
+      color: var(--charcoal);
+      margin-bottom: 20px;
+      font-size: 0.97rem;
+    }
+
+    /* Info card */
+    .info-card {
+      background: var(--white);
+      border: 1px solid var(--parchment);
+      border-left: 3px solid var(--gold);
+      padding: 28px 32px;
+      margin: 36px 0;
+      display: grid;
+      gap: 10px;
+    }
+    .info-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .info-card .label {
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      min-width: 72px;
+      padding-top: 2px;
+    }
+
+    /* Menu highlights */
+    .menu-items { margin: 20px 0 28px; display: grid; gap: 18px; }
+    .menu-item {
+      background: var(--white);
+      border: 1px solid var(--parchment);
+      display: flex;
+      gap: 0;
+      align-items: stretch;
+      overflow: hidden;
+    }
+    .menu-item-img {
+      width: 128px;
+      min-width: 128px;
+      height: 128px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .menu-item-body {
+      padding: 16px 20px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      flex: 1;
+    }
+    .menu-item-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--gold);
+      min-width: 20px;
+      padding-top: 3px;
+      flex-shrink: 0;
+    }
+    .menu-item-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .menu-item-desc { font-size: 0.87rem; color: var(--muted); }
+    @media (max-width: 500px) {
+      .menu-item { flex-direction: column; }
+      .menu-item-img { width: 100%; height: 160px; }
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--parchment);
+      margin: 48px 0;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 2px solid var(--gold);
+      padding: 4px 0 4px 24px;
+      margin: 32px 0;
+    }
+    .pull-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--charcoal);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Tips grid */
+    .tips-grid { display: grid; gap: 12px; margin: 20px 0 28px; }
+    .tip {
+      background: var(--white);
+      border: 1px solid var(--parchment);
+      padding: 16px 20px;
+      display: flex;
+      gap: 14px;
+      font-size: 0.9rem;
+    }
+    .tip-icon { color: var(--gold); font-size: 1rem; flex-shrink: 0; }
+
+    /* Checklist */
+    .checklist { margin: 20px 0 28px; display: grid; gap: 10px; }
+    .check-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 0.9rem;
+    }
+    .check-icon { color: var(--gold); flex-shrink: 0; }
+
+    /* CTA */
+    .cta-block {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 48px 40px;
+      text-align: center;
+      margin: 56px 0 0;
+    }
+    .cta-block h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--white);
+      margin: 0 0 12px;
+    }
+    .cta-block p { color: #B0A898; font-size: 0.9rem; margin: 0 0 28px; }
+    .cta-btn {
+      display: inline-block;
+      padding: 13px 36px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .cta-btn:hover { background: var(--gold); color: var(--charcoal); }
+
+    /* Related reading */
+    .related { margin: 56px 0 0; }
+    .related-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .related a {
+      display: block;
+      font-size: 0.92rem;
+      color: var(--charcoal);
+      text-decoration: none;
+      padding: 10px 0;
+      border-bottom: 1px dotted var(--parchment);
+    }
+    .related a:hover { color: var(--gold); }
+
+    /* Footer */
+    footer {
+      background: var(--white);
+      border-top: 1px solid var(--parchment);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .hero { padding: 48px 20px 40px; }
+      .article-wrap { padding: 40px 20px 80px; }
+      .info-card { padding: 20px; }
+      .cta-block { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://meltmecafe.com" class="nav-logo">melt me</a>
+  <a href="https://meltmecafe.com" class="nav-back">← Back to Home</a>
+</nav>
+
+<!-- HERO -->
+<div style="background: var(--white);">
+  <div class="hero">
+    <p class="hero-eyebrow">New Menu · July 2026</p>
+    <h1>7 New Desserts<br><em>Just Landed at Melt Me</em></h1>
+    <p class="hero-sub">Brownie Madness, Dubai Berry Crush, Ube Cheezmelt, and four more — here's everything new on the menu this month.</p>
+    <div class="hero-meta">
+      <span>Halal Certified</span>
+      <span>Made Fresh In-House</span>
+      <span>Available Now</span>
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('id')">Bahasa Indonesia</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div class="article-wrap">
+
+  <!-- ══ ENGLISH ══ -->
+  <div class="lang-section visible" id="lang-en">
+
+    <h2>Something New at Melt Me</h2>
+    <p>This July, Melt Me is expanding beyond the OG Cheezmelt lineup with seven new creations — spanning fudgy brownies, a Dubai-inspired chocolate crush, and four new takes on ube. Each one is made fresh in-house, following the same halal-certified process as the rest of the menu.</p>
+    <p>If you've visited before, this is the moment to come back and try something outside the original six. If it's your first time, these new items make just as strong a starting point as the classics.</p>
+
+    <hr class="divider" />
+
+    <h2>The Full Lineup</h2>
+
+    <div class="menu-items">
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/brownie-madness.jpg" alt="Brownie Madness at Melt Me — fudgy brownie with caramel drizzle" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">01</span>
+          <div>
+            <span class="menu-item-name">Brownie Madness</span>
+            <span class="menu-item-desc">A dense, fudgy brownie loaded with toppings — rich and deliberately indulgent.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/dubai-berry-crush.jpg" alt="Dubai Berry Crush at Melt Me — chocolate-dipped strawberries with pistachio kunafa" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">02</span>
+          <div>
+            <span class="menu-item-name">Dubai Berry Crush</span>
+            <span class="menu-item-desc">Our take on the viral Dubai chocolate style, reworked with a berry profile instead of pistachio-chocolate.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/ube-cheezmelt.jpg" alt="Ube Cheezmelt at Melt Me — soft-baked purple yam Basque cheesecake" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">03</span>
+          <div>
+            <span class="menu-item-name">Ube Cheezmelt</span>
+            <span class="menu-item-desc">The signature soft-baked Basque burnt cheesecake, reimagined in purple yam (ube).</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/ube-cheesecup.jpg" alt="Ube Cheesecup at Melt Me — crunchy tart shell with melty ube cheese centre" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">04</span>
+          <div>
+            <span class="menu-item-name">Ube Cheesecup</span>
+            <span class="menu-item-desc">A crunchy tart shell filled with an ultra-melty ube cheese centre — the cup version of our Cheesecup line.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/pistachio-cheesecup.jpg" alt="Pistachio Cheesecup at Melt Me — crunchy tart shell with melty pistachio centre" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">05</span>
+          <div>
+            <span class="menu-item-name">Pistachio Cheesecup</span>
+            <span class="menu-item-desc">Same crunchy shell and melty centre, built around pistachio instead of ube.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/matcha-ube.jpg" alt="Matcha Ube drink at Melt Me — layered matcha and ube latte" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">06</span>
+          <div>
+            <span class="menu-item-name">Matcha Ube</span>
+            <span class="menu-item-desc">An unlikely pairing — ceremonial-grade matcha layered against ube — that turns out to work.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/ube-chewy-cheezmelt.jpg" alt="Ube Chewy Cheezmelt at Melt Me — chewy cheesemelt with ube centre" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">07</span>
+          <div>
+            <span class="menu-item-name">Ube Chewy Cheezmelt</span>
+            <span class="menu-item-desc">A chewier, denser take on the Cheezmelt format, finished with an ube centre.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <h2>Where to Start</h2>
+    <p>With seven new items, deciding what to order first can be its own challenge. A few starting points depending on what you're in the mood for:</p>
+
+    <div class="tips-grid">
+      <div class="tip"><span class="tip-icon">🍫</span><span><strong>Chocolate lovers:</strong> start with Brownie Madness or Dubai Berry Crush</span></div>
+      <div class="tip"><span class="tip-icon">💜</span><span><strong>Ube first-timers:</strong> Ube Cheezmelt is the closest to our original OG Cheezmelt in texture</span></div>
+      <div class="tip"><span class="tip-icon">🍵</span><span><strong>Something unexpected:</strong> Matcha Ube is the one guests ask about most</span></div>
+      <div class="tip"><span class="tip-icon">🧁</span><span><strong>Smaller portion:</strong> Ube Cheesecup or Pistachio Cheesecup, both single-serve</span></div>
+    </div>
+
+    <div class="pull-quote">
+      <p>"Made fresh in-house, following the same process as everything else on the menu — no shortcuts on the new items either."</p>
+    </div>
+
+    <hr class="divider" />
+
+    <h2>Good to Know</h2>
+    <div class="info-card">
+      <p><span class="label">Availability</span> All 7 items available now, in-store and via WhatsApp order</p>
+      <p><span class="label">Halal</span> Prepared in our halal-certified kitchen</p>
+      <p><span class="label">Location</span> Citywalk Harbour Bay No. 8–10, Batam</p>
+      <p><span class="label">Hours</span> Daily, 10:00 AM – 11:00 PM</p>
+    </div>
+
+    <div class="checklist">
+      <div class="check-item"><span class="check-icon">✦</span><span>Best paired with our Kyoto Ceremonial Matcha or Banana Candy Crush Latte</span></div>
+      <div class="check-item"><span class="check-icon">✦</span><span>Available while stocks last — made fresh in limited daily batches</span></div>
+      <div class="check-item"><span class="check-icon">✦</span><span>Dine-in and takeaway both available</span></div>
+    </div>
+
+    <div class="cta-block">
+      <h3>Try the New Lineup</h3>
+      <p>Citywalk Harbour Bay No. 8–10 · Open Daily 10AM–11PM · Halal Certified</p>
+      <a href="https://meltmecafe.com/#menu" class="cta-btn">View Full Menu</a>
+    </div>
+
+    <div class="related">
+      <p class="related-label">Related Reading</p>
+      <a href="https://meltmecafe.com/blog/dessert-batam">The OG Cheezmelt — Full Guide →</a>
+      <a href="https://meltmecafe.com/blog/best-cafe-batam-singapore-tourists">Best Cafe in Batam for Singapore Tourists →</a>
+    </div>
+
+  </div>
+  <!-- end EN -->
+
+  <!-- ══ BAHASA INDONESIA ══ -->
+  <div class="lang-section" id="lang-id">
+
+    <h2>Ada yang Baru di Melt Me</h2>
+    <p>Bulan Juli ini, Melt Me memperluas menu di luar deretan OG Cheezmelt dengan tujuh kreasi baru — mulai dari brownie fudgy, chocolate crush ala Dubai, hingga empat variasi baru berbahan ube. Semuanya dibuat fresh di dapur kami sendiri, mengikuti proses halal-certified yang sama seperti menu lainnya.</p>
+    <p>Kalau kamu sudah pernah datang, ini saatnya balik lagi dan coba sesuatu di luar enam rasa original. Kalau ini kunjungan pertamamu, menu baru ini juga jadi titik awal yang sama kuatnya dengan menu klasik.</p>
+
+    <hr class="divider" />
+
+    <h2>Daftar Lengkap</h2>
+
+    <div class="menu-items">
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/brownie-madness.jpg" alt="Brownie Madness di Melt Me — brownie fudgy dengan saus karamel" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">01</span>
+          <div>
+            <span class="menu-item-name">Brownie Madness</span>
+            <span class="menu-item-desc">Brownie padat dan fudgy dengan topping melimpah — kaya rasa dan sengaja dibuat indulgent.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/dubai-berry-crush.jpg" alt="Dubai Berry Crush di Melt Me — stroberi berlapis cokelat dan kunafa pistachio" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">02</span>
+          <div>
+            <span class="menu-item-name">Dubai Berry Crush</span>
+            <span class="menu-item-desc">Versi kami dari gaya Dubai chocolate yang viral, diolah ulang dengan profil berry, bukan pistachio-cokelat.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/ube-cheezmelt.jpg" alt="Ube Cheezmelt di Melt Me — Basque cheesecake ubi ungu soft-baked" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">03</span>
+          <div>
+            <span class="menu-item-name">Ube Cheezmelt</span>
+            <span class="menu-item-desc">Signature Basque burnt cheesecake soft-baked kami, kini hadir dalam rasa ube (ubi ungu).</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/ube-cheesecup.jpg" alt="Ube Cheesecup di Melt Me — kulit tart renyah dengan isian keju ube melty" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">04</span>
+          <div>
+            <span class="menu-item-name">Ube Cheesecup</span>
+            <span class="menu-item-desc">Kulit tart yang renyah dengan isian keju ube yang ultra-melty — versi cup dari lini Cheesecup kami.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/pistachio-cheesecup.jpg" alt="Pistachio Cheesecup di Melt Me — kulit tart renyah dengan isian pistachio melty" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">05</span>
+          <div>
+            <span class="menu-item-name">Pistachio Cheesecup</span>
+            <span class="menu-item-desc">Kulit renyah dan isian melty yang sama, kali ini dengan rasa pistachio, bukan ube.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/matcha-ube.jpg" alt="Minuman Matcha Ube di Melt Me — latte berlapis matcha dan ube" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">06</span>
+          <div>
+            <span class="menu-item-name">Matcha Ube</span>
+            <span class="menu-item-desc">Kombinasi tak terduga — matcha ceremonial grade dipadukan dengan ube — dan ternyata cocok.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img class="menu-item-img" src="/images/ube-chewy-cheezmelt.jpg" alt="Ube Chewy Cheezmelt di Melt Me — cheesemelt chewy dengan isian ube" loading="lazy">
+        <div class="menu-item-body">
+          <span class="menu-item-num">07</span>
+          <div>
+            <span class="menu-item-name">Ube Chewy Cheezmelt</span>
+            <span class="menu-item-desc">Versi Cheezmelt yang lebih chewy dan padat, dengan isian ube di tengahnya.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <h2>Mulai dari Mana</h2>
+    <p>Dengan tujuh menu baru sekaligus, memilih yang mana dulu bisa jadi tantangan tersendiri. Beberapa rekomendasi tergantung mood kamu:</p>
+
+    <div class="tips-grid">
+      <div class="tip"><span class="tip-icon">🍫</span><span><strong>Pencinta cokelat:</strong> mulai dari Brownie Madness atau Dubai Berry Crush</span></div>
+      <div class="tip"><span class="tip-icon">💜</span><span><strong>Baru coba ube:</strong> Ube Cheezmelt paling mirip tekstur OG Cheezmelt original kami</span></div>
+      <div class="tip"><span class="tip-icon">🍵</span><span><strong>Yang unik:</strong> Matcha Ube adalah yang paling sering ditanyakan tamu</span></div>
+      <div class="tip"><span class="tip-icon">🧁</span><span><strong>Porsi lebih kecil:</strong> Ube Cheesecup atau Pistachio Cheesecup, keduanya single-serve</span></div>
+    </div>
+
+    <div class="pull-quote">
+      <p>"Dibuat fresh di dapur kami sendiri, mengikuti proses yang sama seperti menu lainnya — tidak ada jalan pintas untuk menu baru ini."</p>
+    </div>
+
+    <hr class="divider" />
+
+    <h2>Yang Perlu Diketahui</h2>
+    <div class="info-card">
+      <p><span class="label">Ketersediaan</span> Semua 7 menu sudah tersedia sekarang, di toko maupun order via WhatsApp</p>
+      <p><span class="label">Halal</span> Diproses di dapur bersertifikat halal kami</p>
+      <p><span class="label">Lokasi</span> Citywalk Harbour Bay No. 8–10, Batam</p>
+      <p><span class="label">Jam Buka</span> Setiap hari, 10.00 – 23.00</p>
+    </div>
+
+    <div class="checklist">
+      <div class="check-item"><span class="check-icon">✦</span><span>Paling cocok dipadukan dengan Kyoto Ceremonial Matcha atau Banana Candy Crush Latte kami</span></div>
+      <div class="check-item"><span class="check-icon">✦</span><span>Tersedia selama stok masih ada — dibuat fresh dalam batch terbatas setiap hari</span></div>
+      <div class="check-item"><span class="check-icon">✦</span><span>Tersedia untuk dine-in maupun takeaway</span></div>
+    </div>
+
+    <div class="cta-block">
+      <h3>Coba Menu Barunya</h3>
+      <p>Citywalk Harbour Bay No. 8–10 · Buka Setiap Hari 10.00–23.00 · Halal Certified</p>
+      <a href="https://meltmecafe.com/#menu" class="cta-btn">Lihat Menu Lengkap</a>
+    </div>
+
+    <div class="related">
+      <p class="related-label">Baca Juga</p>
+      <a href="https://meltmecafe.com/blog/dessert-batam">OG Cheezmelt — Panduan Lengkap →</a>
+      <a href="https://meltmecafe.com/blog/best-cafe-batam-singapore-tourists">Kafe Terbaik di Batam untuk Wisatawan Singapura →</a>
+    </div>
+
+  </div>
+  <!-- end ID -->
+
+</div>
+<!-- end article-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Melt Me Dessert & Coffee Space · Citywalk Harbour Bay No. 8–10, Batam · <a href="https://meltmecafe.com">meltmecafe.com</a></p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('lang-en').classList.toggle('visible', lang === 'en');
+    document.getElementById('lang-id').classList.toggle('visible', lang === 'id');
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
