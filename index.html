@@ -90,6 +90,7 @@
   --muted:#9A8A78;
   --line:#DDD3C0;
   --white:#FFFFFF;
+  --topbar-h:38px;
 }
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);font-weight:300;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -104,8 +105,15 @@ html[lang=zh] [data-zh]{display:revert}
 html[lang=id] [data-id]{display:revert}
 html[lang=en] span[data-en],html[lang=zh] span[data-zh],html[lang=id] span[data-id]{display:inline}
 
+/* TOP BAR: live status + hours */
+body{padding-top:var(--topbar-h)}
+.top-bar{position:fixed;top:0;left:0;right:0;z-index:250;height:var(--topbar-h);background:var(--ink);color:var(--cream);display:flex;align-items:center;justify-content:center;gap:16px;font-size:11px;letter-spacing:.06em;padding:0 16px;flex-wrap:wrap}
+.top-bar .live-status{background:transparent;border:none;padding:0}
+.top-bar .tb-hours{color:rgba(247,242,234,.55);display:flex;align-items:center;gap:8px}
+.top-bar .tb-sep{color:rgba(247,242,234,.3)}
+
 /* HEADER */
-header{position:fixed;inset:0 0 auto;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 40px;background:rgba(247,242,234,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(221,211,192,.4)}
+header{position:fixed;top:var(--topbar-h);left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 40px;background:rgba(247,242,234,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(221,211,192,.4)}
 .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;letter-spacing:.06em;color:var(--ink)}
 .logo em{font-style:italic;color:var(--brown)}
 nav-links{display:flex;gap:28px}
@@ -122,7 +130,7 @@ nav-links{display:flex;gap:28px}
 .ham span{display:block;width:22px;height:1.5px;background:var(--ink);margin:5px 0;transition:.3s}
 
 /* HERO */
-.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;display:flex;align-items:flex-end}
+.hero{position:relative;height:calc(100vh - var(--topbar-h));min-height:600px;overflow:hidden;display:flex;align-items:flex-end}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,21,16,.72) 0%,rgba(28,21,16,.2) 45%,rgba(28,21,16,.05) 100%)}
 .hero-content{position:relative;z-index:2;padding:0 56px 72px;max-width:900px}
@@ -341,6 +349,8 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
   .fb{grid-column:span 2}
 }
 @media(max-width:768px){
+  .top-bar{height:auto;min-height:var(--topbar-h);padding:6px 12px;font-size:9.5px;gap:8px}
+  .top-bar .tb-hours{display:none}
   header{padding:14px 20px}
   .nav-links,.wa-btn{display:none}
   .ham{display:block}
@@ -380,6 +390,17 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
 </head>
 <body data-i18n>
 
+<!-- TOP BAR: LIVE STATUS + HOURS -->
+<div class="top-bar">
+  <span class="live-status" id="live-status"><span class="live-dot"></span><span id="live-status-text">—</span></span>
+  <span class="tb-sep">·</span>
+  <span class="tb-hours">
+    <span data-en>Mon–Sun · 10:00 AM – 11:00 PM</span>
+    <span data-zh>周一至周日 · 10:00 – 23:00</span>
+    <span data-id>Senin–Minggu · 10:00 – 23:00</span>
+  </span>
+</div>
+
 <!-- HEADER -->
 <header>
   <a href="#" class="logo">melt <em>me</em></a>
@@ -413,7 +434,6 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
       <span data-en>2 min from Harbour Bay Ferry Terminal · Batam</span>
       <span data-zh>距港湾渡轮码头 2 分钟 · 巴淡岛</span>
       <span data-id>2 menit dari Harbour Bay Ferry Terminal · Batam</span>
-      <span class="live-status" id="live-status"><span class="live-dot"></span><span id="live-status-text">—</span></span>
     </div>
     <h1 class="hero-title">
       <span data-en>Made to <em>melt</em>,<br>meant to matter.</span>
