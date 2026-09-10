@@ -305,6 +305,34 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
 .df-btn:hover{background:var(--brown2)}
 .df-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--muted);margin-top:10px}
 
+/* NEW BADGE */
+.badge-new{display:inline-block;background:#D4A96A;color:#1C1510;font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:99px;margin-left:8px;font-weight:600;vertical-align:middle}
+
+/* LIVE OPEN/CLOSED STATUS */
+.live-status{display:inline-flex;align-items:center;gap:7px;background:rgba(247,242,234,.1);border:1px solid rgba(247,242,234,.25);padding:5px 12px;border-radius:99px;font-size:10px;letter-spacing:.1em}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#7CC576;flex-shrink:0;animation:dotpulse 2s ease infinite}
+.live-status.is-closed .live-dot{background:#D97757;animation:none}
+@keyframes dotpulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* STICKY MOBILE ACTION BAR */
+.sticky-mobile-bar{display:none}
+@media(max-width:768px){
+  .sticky-mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:300;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+  .sticky-mobile-bar a{flex:1;text-align:center;padding:15px 8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+  .sticky-mobile-bar a:first-child{background:var(--brown);color:var(--white)}
+  .sticky-mobile-bar a:last-child{background:var(--ink);color:var(--cream)}
+  body{padding-bottom:52px}
+}
+
+/* SGD PRICE CONVERSION */
+.mpanel .mi-price{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.mi-price-sgd{font-family:'Inter',sans-serif;font-size:10px;color:var(--muted);font-weight:300;white-space:nowrap;font-style:normal}
+
+/* REVIEW AVATARS */
+.rv-meta{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.rv-meta-left{display:flex;align-items:center;gap:10px;min-width:0}
+.rv-avatar{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:600;color:var(--ink);flex-shrink:0}
+
 /* RESPONSIVE */
 @media(max-width:1024px){
   .sig-grid{grid-template-columns:repeat(2,1fr)}
@@ -345,6 +373,7 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
   .hero-scroll{display:none}
   .df-row{flex-direction:column}
   .df-btn{width:100%}
+  .rv-avatar{width:30px;height:30px;font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
 </style>
@@ -384,6 +413,7 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
       <span data-en>2 min from Harbour Bay Ferry Terminal · Batam</span>
       <span data-zh>距港湾渡轮码头 2 分钟 · 巴淡岛</span>
       <span data-id>2 menit dari Harbour Bay Ferry Terminal · Batam</span>
+      <span class="live-status" id="live-status"><span class="live-dot"></span><span id="live-status-text">—</span></span>
     </div>
     <h1 class="hero-title">
       <span data-en>Made to <em>melt</em>,<br>meant to matter.</span>
@@ -564,9 +594,9 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
       </h2>
     </div>
     <p class="sec-aside">
-      <span data-en>Prices in IDR (×1,000). Halal-friendly kitchen. Subject to availability.</span>
-      <span data-zh>价格以千印尼盾计。清真友好厨房。视供应情况而定。</span>
-      <span data-id>Harga IDR (×1.000). Dapur halal-friendly. Sesuai ketersediaan.</span>
+      <span data-en>Prices in IDR (×1,000), with approx. SGD shown for reference (live daily rate). Halal-friendly kitchen. Subject to availability.</span>
+      <span data-zh>价格以千印尼盾计，另附新币参考价（每日实时汇率）。清真友好厨房。视供应情况而定。</span>
+      <span data-id>Harga IDR (×1.000), dengan perkiraan harga SGD untuk referensi (kurs harian). Dapur halal-friendly. Sesuai ketersediaan.</span>
     </p>
   </div>
 
@@ -624,7 +654,7 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
         <div class="mi"><div><div class="mi-name">Ajisai 2.0</div><div class="mi-desc">Ceremonial matcha powder</div></div><div class="mi-price">Hot 62k<span class="mi-sep">·</span>Cold 64k</div></div>
         <div class="mi"><div><div class="mi-name">Tsubaki</div><div class="mi-desc">Houjicha powder</div></div><div class="mi-price">Hot 45k<span class="mi-sep">·</span>Cold 48k</div></div>
         <div class="mi"><div><div class="mi-name">Mokuren</div><div class="mi-desc">Genmaicha powder</div></div><div class="mi-price">Hot 45k<span class="mi-sep">·</span>Cold 48k</div></div>
-        <div class="mi"><div><div class="mi-name">Tenryu 2.0</div><div class="mi-desc">Ceremonial matcha powder</div></div><div class="mi-price">Hot 78k<span class="mi-sep">·</span>Cold 80k</div></div>
+        <div class="mi"><div><div class="mi-name">Tenryu 2.0 <span class="badge-new">New</span></div><div class="mi-desc">Ceremonial matcha powder</div></div><div class="mi-price">Hot 78k<span class="mi-sep">·</span>Cold 80k</div></div>
       </div>
       <div class="mgrp">
         <h3 class="mgrp-title">Artisan Tea</h3><span class="mgrp-sub">Served in teapot</span>
@@ -680,7 +710,7 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
         <div class="mi"><div><div class="mi-name">OG</div></div><div class="mi-price">40k</div></div>
         <div class="mi"><div><div class="mi-name">Choco</div></div><div class="mi-price">45k</div></div>
         <div class="mi"><div><div class="mi-name">Matcha</div></div><div class="mi-price">45k</div></div>
-        <div class="mi"><div><div class="mi-name">Pistachio</div></div><div class="mi-price">48k</div></div>
+        <div class="mi"><div><div class="mi-name">Pistachio <span class="badge-new">New</span></div></div><div class="mi-price">48k</div></div>
       </div>
       <div class="mgrp">
         <h3 class="mgrp-title">Crunchie Cake</h3><span class="mgrp-sub">Moist chocolate cake, crunchy feuilletine top</span>
@@ -693,11 +723,11 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
         <div class="mi"><div><div class="mi-name">Genmaicha</div></div><div class="mi-price">Slice 44k<span class="mi-sep">·</span>Whole 77k</div></div>
       </div>
       <div class="mgrp">
-        <h3 class="mgrp-title">Jasmine Lychee Cake</h3><span class="mgrp-sub">Moist sponge, jasmine cream, lychee compote</span>
+        <h3 class="mgrp-title">Jasmine Lychee Cake <span class="badge-new">New</span></h3><span class="mgrp-sub">Moist sponge, jasmine cream, lychee compote</span>
         <div class="mi"><div><div class="mi-name">Original</div></div><div class="mi-price">Slice 38k<span class="mi-sep">·</span>Whole 72k</div></div>
       </div>
       <div class="mgrp">
-        <h3 class="mgrp-title">Matcha Osmanthus Grape</h3><span class="mgrp-sub">Matcha sponge, osmanthus cream, fresh grape</span>
+        <h3 class="mgrp-title">Matcha Osmanthus Grape <span class="badge-new">New</span></h3><span class="mgrp-sub">Matcha sponge, osmanthus cream, fresh grape</span>
         <div class="mi"><div><div class="mi-name">Original</div></div><div class="mi-price">Slice 40k<span class="mi-sep">·</span>Whole 75k</div></div>
       </div>
       <div class="mgrp">
@@ -726,7 +756,7 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
         <div class="mi"><div><div class="mi-name">Original / Matcha / Chocolate</div><div class="mi-desc">Flavour based on daily availability</div></div><div class="mi-price">29k</div></div>
       </div>
       <div class="mgrp">
-        <h3 class="mgrp-title">Brownie Madness</h3><span class="mgrp-sub">Fudgy brownie, indulgent toppings</span>
+        <h3 class="mgrp-title">Brownie Madness <span class="badge-new">New</span></h3><span class="mgrp-sub">Fudgy brownie, indulgent toppings</span>
         <div class="mi"><div><div class="mi-name">Original</div></div><div class="mi-price">48k</div></div>
       </div>
     </div>
@@ -809,32 +839,32 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
     <div class="review-card">
       <div class="rv-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="rv-text">"Such a cute cafe. Amazing coffee, cozy corners, and the best vibes all around. The cheese melt choco was indulgent, and the strawberry yogurt cheesecake was chef's kiss. Perfect spot for working, chatting, or simply soaking in a calm moment."</p>
-      <div class="rv-meta"><span class="rv-name">Tika Miao</span><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
+      <div class="rv-meta"><div class="rv-meta-left"><div class="rv-avatar" style="background:#D4A96A">TM</div><span class="rv-name">Tika Miao</span></div><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
     </div>
     <div class="review-card">
       <div class="rv-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="rv-text">"The place is great — clean, comfortable, and very aesthetically pleasing. It's definitely Instagrammable. The food and drinks are all really good, nothing misses. Highly recommended."</p>
-      <div class="rv-meta"><span class="rv-name">Yudha Prayoga</span><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
+      <div class="rv-meta"><div class="rv-meta-left"><div class="rv-avatar" style="background:#C9B896">YP</div><span class="rv-name">Yudha Prayoga</span></div><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
     </div>
     <div class="review-card">
       <div class="rv-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="rv-text">"Nice ambience and genuinely good food, surely the best cheesecake in town."</p>
-      <div class="rv-meta"><span class="rv-name">Helen</span><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
+      <div class="rv-meta"><div class="rv-meta-left"><div class="rv-avatar" style="background:#D4A96A">H</div><span class="rv-name">Helen</span></div><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
     </div>
     <div class="review-card">
       <div class="rv-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="rv-text">"Super cozy cafe with good food and service! Their OG cheesecake was really light and delicious, and I got to see them whisk my matcha at the counter."</p>
-      <div class="rv-meta"><span class="rv-name">Jair Li</span><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
+      <div class="rv-meta"><div class="rv-meta-left"><div class="rv-avatar" style="background:#C9B896">JL</div><span class="rv-name">Jair Li</span></div><span class="rv-score">Food · Service · Atmosphere: 5/5</span></div>
     </div>
     <div class="review-card">
       <div class="rv-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="rv-text">"This dessert cafe is a dream for cheese lovers. Service was good and staff were friendly. We even got free cheese ice cream — such a nice surprise!"</p>
-      <div class="rv-meta"><span class="rv-name">Emily Farida</span><span class="rv-score">Local Guide · 27 Coffee Shop Reviews</span></div>
+      <div class="rv-meta"><div class="rv-meta-left"><div class="rv-avatar" style="background:#D4A96A">EF</div><span class="rv-name">Emily Farida</span></div><span class="rv-score">Local Guide · 27 Coffee Shop Reviews</span></div>
     </div>
     <div class="review-card">
       <div class="rv-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="rv-text">"Super nice food and super friendly staff. Suitable for all group sizes and every visit feels just as good."</p>
-      <div class="rv-meta"><span class="rv-name">Jamie Feng</span><span class="rv-score">Local Guide · 15 Reviews</span></div>
+      <div class="rv-meta"><div class="rv-meta-left"><div class="rv-avatar" style="background:#C9B896">JF</div><span class="rv-name">Jamie Feng</span></div><span class="rv-score">Local Guide · 15 Reviews</span></div>
     </div>
   </div>
   <div class="rv-total">
@@ -947,6 +977,25 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
   </div>
 </section>
 
+<!-- INSTAGRAM -->
+<section style="padding:120px 40px;background:var(--cream)">
+  <div class="sec-hd">
+    <div>
+      <div class="sec-label"><span data-en>Follow Along</span><span data-zh>关注我们</span><span data-id>Ikuti Kami</span></div>
+      <h2 class="sec-title" style="margin-top:16px">
+        <span data-en>Fresh from <em>@meltmebyzc</em>.</span>
+        <span data-zh>来自 <em>@meltmebyzc</em> 的最新动态。</span>
+        <span data-id>Terbaru dari <em>@meltmebyzc</em>.</span>
+      </h2>
+    </div>
+    <a href="https://www.instagram.com/meltmebyzc/" target="_blank" rel="noopener" class="link-line" data-track="instagram_section"><span data-en>Follow on Instagram →</span><span data-zh>在 Instagram 关注 →</span><span data-id>Ikuti di Instagram →</span></a>
+  </div>
+  <div style="max-width:540px;margin:56px auto 0">
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/meltmebyzc/p/DMWw0PWSYuf/" data-instgrm-version="14" style="background:#FFF;border:1px solid var(--line);margin:0 auto;max-width:540px;width:100%"></blockquote>
+  </div>
+</section>
+<script async src="//www.instagram.com/embed.js"></script>
+
 <!-- FOOTER -->
 <footer>
   <div class="ft">
@@ -980,6 +1029,16 @@ footer{background:var(--ink);color:var(--muted);padding:80px 40px 40px}
   </div>
 </footer>
 
+<!-- STICKY MOBILE ACTION BAR -->
+<div class="sticky-mobile-bar">
+  <a href="https://wa.me/6282227266228?text=Hi%20Melt%20Me" data-track="whatsapp_sticky_mobile">
+    <span data-en>WhatsApp</span><span data-zh>WhatsApp</span><span data-id>WhatsApp</span>
+  </a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Melt+Me+Dessert+Coffee+Space+Citywalk+Harbour+Bay+Batam" target="_blank" rel="noopener" data-track="visit_sticky_mobile">
+    <span data-en>Visit Us</span><span data-zh>立即到访</span><span data-id>Kunjungi</span>
+  </a>
+</div>
+
 <!-- Google Places Autocomplete for Directions Finder -->
 <!-- IMPORTANT: replace YOUR_API_KEY with your restricted Maps API key, and restrict it to this site's domain in Google Cloud Console -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSLco2vH_cut12-JyMOi1Q-yEVqsUW1Bs&libraries=places&loading=async" async defer></script>
@@ -997,6 +1056,7 @@ function setLang(l){
     if (ph) addrInput.placeholder = ph;
   }
   try{localStorage.setItem('mm-lang',l)}catch(e){}
+  if (typeof updateLiveStatus === 'function') updateLiveStatus();
 }
 function showM(id,btn){
   document.querySelectorAll('.mpanel').forEach(p=>p.classList.remove('on'));
@@ -1062,6 +1122,60 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+});
+
+/* --- LIVE OPEN/CLOSED STATUS (10:00-23:00 Asia/Jakarta, same as Batam) --- */
+const statusText = {
+  en: {open: function(h,m){return 'Open Now · Closes in ' + h + 'h ' + m + 'm';}, closed: function(h,m){return 'Closed · Opens in ' + h + 'h ' + m + 'm';}},
+  zh: {open: function(h,m){return '营业中 · ' + h + '小时' + m + '分钟后打烊';}, closed: function(h,m){return '已打烊 · ' + h + '小时' + m + '分钟后开门';}},
+  id: {open: function(h,m){return 'Buka Sekarang · Tutup dalam ' + h + 'j ' + m + 'm';}, closed: function(h,m){return 'Tutup · Buka dalam ' + h + 'j ' + m + 'm';}}
+};
+function updateLiveStatus(){
+  const el = document.getElementById('live-status');
+  const txt = document.getElementById('live-status-text');
+  if(!el || !txt) return;
+  const now = new Date(new Date().toLocaleString('en-US', {timeZone: 'Asia/Jakarta'}));
+  const mins = now.getHours()*60 + now.getMinutes();
+  const openMins = 10*60, closeMins = 23*60;
+  const lang = ['en','zh','id'].includes(document.documentElement.lang) ? document.documentElement.lang : 'en';
+  let isOpen = mins >= openMins && mins < closeMins;
+  let diff = isOpen ? (closeMins - mins) : (mins < openMins ? (openMins - mins) : (24*60 - mins + openMins));
+  const h = Math.floor(diff/60), m = diff%60;
+  txt.textContent = isOpen ? statusText[lang].open(h,m) : statusText[lang].closed(h,m);
+  el.classList.toggle('is-closed', !isOpen);
+}
+updateLiveStatus();
+setInterval(updateLiveStatus, 60000);
+
+/* --- APPROX SGD PRICE CONVERSION (live daily rate, ECB-sourced via Frankfurter, free/no-key) --- */
+let MM_SGD_RATE = 12000; // fallback: approx IDR per 1 SGD, used only if the live fetch below fails
+async function fetchLiveSGDRate(){
+  try{
+    const res = await fetch('https://api.frankfurter.dev/v1/latest?base=IDR&symbols=SGD');
+    const data = await res.json();
+    if(data && data.rates && data.rates.SGD){
+      MM_SGD_RATE = 1 / data.rates.SGD; // IDR per 1 SGD
+    }
+  }catch(e){
+    // offline or blocked — silently keep the fallback rate above
+  }
+}
+function addSGDConversions(){
+  document.querySelectorAll('.mpanel .mi-price').forEach(function(el){
+    const original = el.dataset.priceOriginal || el.innerHTML;
+    el.dataset.priceOriginal = original; // remember the clean original so re-runs don't stack
+    const matches = original.match(/\d+(?:\.\d+)?k/g);
+    if(!matches) return;
+    const sgdParts = matches.map(function(m){
+      const idr = parseFloat(m) * 1000;
+      return 'S$' + (idr / MM_SGD_RATE).toFixed(1);
+    });
+    el.innerHTML = '<span class="mi-price-main">' + original + '</span><span class="mi-price-sgd">~' + sgdParts.join(' · ') + '</span>';
+  });
+}
+document.addEventListener('DOMContentLoaded', async function(){
+  await fetchLiveSGDRate();
+  addSGDConversions();
 });
 
 try{
